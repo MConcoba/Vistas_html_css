@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <link rel="stylesheet" href="../css/productos.css">
+  <link rel="stylesheet" href="../css/compras.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/main.js"></script>
+</head>
+<body>
+
+    <header class="menu">      
+        <figure class="logoSana">
+            <img src="../img/sana-sana.png" alt="">
+        </figure>
+    <div class="contenav">
+        <nav class="navegacion">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="">Quienes Somos?</a>
+                    <ul>
+                        <li><a href="../html/nosotros.html">Conocenos</a></li>
+                        <li><a href="../html/contactanos.html">Contactanos</a></li>
+                    </ul>
+                </li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="login.html">Login</a></li>
+            </li>
+            </ul>
+        </nav>
+</header>
+
+
+
+
+<div class="contenedor">
+    <form>
+        <input type="text" name="Buscar" placeholder="Buscar..."><button type="submit" class="submit-btn">Buscar</button>
+    </form>
+    
+</div>  
+
+
+<div class="tabla" id="tabla" style="visibility: visible;">
+    <table>
+        <caption style="font-size: 50px;">Carrito de Compras</caption>
+        <thead>
+            <tr class="encabezado">
+                
+                <th class="column1">Producto</th>
+                <th class="column2">Precio Unitario</th>
+                <th class="column3">Cantidad a Comprar</th>
+                <th class="column4">Descripcion</th>
+                <th class="column5">Sub-Total</th>
+                
+            </tr>
+        </thead>
+        <tbody id="informacion">
+                <tr id="contenido">
+                    <td class="column1"><img src="../img/h10-img-1.png" alt=""></td>
+                    <td class="column2">Q. 10.50</td>
+                    <td class="column3"><input type="number" name="" id="" value="5"></td>
+                    <td class="column4">Vitamianas</td>
+                    <td class="column5">Q. 52.50</td>
+                   
+                </tr>
+                <tr id="contenido">
+                    <td class="column1"><img src="../img/h10-img-2.png" alt=""></td>
+                    <td class="column2">Q. 10.50</td>
+                    <td class="column3"><input type="number" name="" id=""></td>
+                    <td class="column4">Vitamianas</td>
+                    <td class="column5">Q. 52.50</td>
+                   
+                </tr>
+
+
+                <tr id="contenido">
+                    <td class="column1"><img src="../img/h10-img-3.png" alt=""></td>
+                    <td class="column2">Q. 10.50</td>
+                    <td class="column3"><input type="number" name="" id=""></td>
+                    <td class="column4">Vitamianas</td>
+                    <td class="column5">Q. 52.50</td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr class="encabezado">
+                    <th class="column1">Total</th>
+                    <th class="column2">---</th>
+                    <th class="column3">---</th>
+                    <th class="column4">---</th>
+                    <th class="column5">--</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="informacion" >
+                    <tr id="contenido">
+                        <td class="column1">000.00</td>
+                        <td class="column2"><input type="button" value="Actualizar"></td>
+                        <td class="column3"><input type="button" value="Pagar"></td>
+                        <td class="column4"><input type="button" value="Cancelar"></td>
+                        <td class="column5"><input type="button" value="Factura"></td>
+                    </tr>
+            </tbody>
+        </table>
+
+</div>
+
+  <figure class="agregar">
+		<div class="mas">
+            <input type="button" value="Agregar"
+				onclick="document.getElementById('select').style.visibility='visible',
+				document.getElementById('select1').style.visibility='visible',
+				document.getElementById('select2').style.visibility='visible',
+				document.getElementById('select3').style.visibility='visible',
+				document.getElementById('select4').style.visibility='visible',
+				document.getElementById('select5').style.visibility='visible',
+				document.getElementById('select6').style.visibility='visible',
+				document.getElementById('select7').style.visibility='visible',
+				document.getElementById('select8').style.visibility='visible',
+				document.getElementById('select9').style.visibility='visible',
+				document.getElementById('select10').style.visibility='visible',
+				document.getElementById('select11').style.visibility='visible'">
+		</div>
+		<div class="menos">
+				<input type="button" value="Cancelar"
+				onclick="document.getElementById('select').style.visibility='hidden',
+				document.getElementById('select1').style.visibility='hidden',
+				document.getElementById('select2').style.visibility='hidden',
+				document.getElementById('select3').style.visibility='hidden',
+				document.getElementById('select4').style.visibility='hidden',
+				document.getElementById('select5').style.visibility='hidden',
+				document.getElementById('select6').style.visibility='hidden',
+				document.getElementById('select7').style.visibility='hidden',
+				document.getElementById('select8').style.visibility='hidden',
+				document.getElementById('select9').style.visibility='hidden',
+				document.getElementById('select10').style.visibility='hidden',
+				document.getElementById('select11').style.visibility='hidden'">
+		</div>
+	
+			
+	</figure>
+  
+
+	
+<!--TODO-->
+<div class="contenedor" id="todo" style="visibility: visible">
+    <ul class="listas">
+        <li class="detalles">
+            <div class="producto" onclick="return true">
+                <div class="datos"></div>
+                <div class="info">
+                    <header>
+                        <h1>Nombre-Producto</h1>
+                        <span class="year">Vitamianas</span>
+                        
+                    </header>
+                        <label for="Descripcion">Descripcion: (Descripcion)</label><br>
+                        <label for="Descripcion">Precio-Unitario: (Descripcion)</label><br>
+                        <label for="Descripcion">Precio-Mayor: (Descripcion)</label><br>
+						<label for="Descripcion">Cantidad-Exitencia: (Descripcion)</label><br>
+						<label id="select" for="Descripcion" style="visibility: hidden">Seleccionar<input type="checkbox" name="Seleccionar" id="" ></label >
+                </div>
+            </div>
+        </li>
+
+
+        <li class="detalles">
+            <div class="producto" onclick="return true">
+                <div class="datos"></div>
+                <div class="info">
+                    <header>
+                        <h1>Nombre-Producto</h1>
+                        <span class="year">Vitamianas</span>
+                        
+                    </header>
+                        <label for="Descripcion">Descripcion: (Descripcion)</label><br>
+                        <label for="Descripcion">Precio-Unitario: (Descripcion)</label><br>
+                        <label for="Descripcion">Precio-Mayor: (Descripcion)</label><br>
+						<label for="Descripcion">Cantidad-Exitencia: (Descripcion)</label><br>
+						<label id="select1" for="Descripcion" style="visibility: hidden">Seleccionar<input type="checkbox" name="Seleccionar" id="" ></label >
+                </div>
+            </div>
+        </li>
+
+        <li class="detalles">
+            <div class="producto" onclick="return true">
+                <div class="datos"></div>
+                <div class="info">
+                    <header>
+                        <h1>Nombre-Producto</h1>
+                        <span class="year">Vitamianas</span>
+                        
+                    </header>
+                        <label for="Descripcion">Descripcion: (Descripcion)</label><br>
+                        <label for="Descripcion">Precio-Unitario: (Descripcion)</label><br>
+                        <label for="Descripcion">Precio-Mayor: (Descripcion)</label><br>
+						<label for="Descripcion">Cantidad-Exitencia: (Descripcion)</label><br>
+						<label id="select2" for="Descripcion" style="visibility: hidden">Seleccionar<input type="checkbox" name="Seleccionar" id="" ></label >
+                </div>
+            </div>
+        </li>
+
+
+        <li class="detalles">
+            <div class="producto" onclick="return true">
+                <div class="datos"></div>
+                <div class="info">
+                    <header>
+                        <h1>Nombre-Producto</h1>
+                        <span class="year">Vitamianas</span>
+                        
+                    </header>
+                        <label for="Descripcion">Descripcion: (Descripcion)</label><br>
+                        <label for="Descripcion">Precio-Unitario: (Descripcion)</label><br>
+                        <label for="Descripcion">Precio-Mayor: (Descripcion)</label><br>
+						<label for="Descripcion">Cantidad-Exitencia: (Descripcion)</label><br>
+						<label id="select3" for="Descripcion" style="visibility: hidden">Seleccionar<input type="checkbox" name="Seleccionar" id="" ></label >
+                </div>
+            </div>
+        </li>
+
+
+        <li class="detalles">
+            <div class="producto" onclick="return true">
+                <div class="datos"></div>
+                <div class="info">
+                    <header>
+                        <h1>Nombre-Producto</h1>
+                        <span class="year">Vitamianas</span>
+                        
+                    </header>
+                        <label for="Descripcion">Descripcion: (Descripcion)</label><br>
+                        <label for="Descripcion">Precio-Unitario: (Descripcion)</label><br>
+                        <label for="Descripcion">Precio-Mayor: (Descripcion)</label><br>
+						<label for="Descripcion">Cantidad-Exitencia: (Descripcion)</label>
+						<label id="select4" for="Descripcion" style="visibility: hidden">Seleccionar<input type="checkbox" name="Seleccionar" id="" ></label >
+                </div>
+            </div>
+        </li>
+
+        <li class="detalles">
+            <div class="producto" onclick="return true">
+                <div class="datos"></div>
+                <div class="info">
+                    <header>
+                        <h1>Nombre-Producto</h1>
+                        <span class="year">Vitamianas</span>
+                    </header>
+                        <label for="Descripcion">Descripcion: (Descripcion)</label><br>
+                        <label for="Descripcion">Precio-Unitario: (Descripcion)</label><br>
+                        <label for="Descripcion">Precio-Mayor: (Descripcion)</label><br>
+						<label for="Descripcion">Cantidad-Exitencia: (Descripcion)</label><br>
+						<label id="select5" for="Descripcion" style="visibility: hidden">Seleccionar<input type="checkbox" name="Seleccionar" id="" ></label >
+                </div>
+            </div>
+        </li>
+
+        <li class="detalles">
+            <div class="producto" onclick="return true">
+                <div class="datos"></div>
+                <div class="info">
+                    <header>
+                        <h1>Nombre-Producto</h1>
+                        <span class="year">Vitamianas</span>
+                        
+                    </header>
+                        <label for="Descripcion">Descripcion: (Descripcion)</label><br>
+                        <label for="Descripcion">Precio-Unitario: (Descripcion)</label><br>
+                        <label for="Descripcion">Precio-Mayor: (Descripcion)</label><br>
+						<label for="Descripcion">Cantidad-Exitencia: (Descripcion)</label>
+						<label id="select6" for="Descripcion" style="visibility: hidden">Seleccionar<input type="checkbox" name="Seleccionar" id="" ></label >
+                </div>
+            </div>
+        </li>
+
+
+        <li class="detalles">
+            <div class="producto" onclick="return true">
+                <div class="datos"></div>
+                <div class="info">
+                    <header>
+                        <h1>Nombre-Producto</h1>
+                        <span class="year">Vitamianas</span>
+                        
+                    </header>
+                        <label for="Descripcion">Descripcion: (Descripcion)</label><br>
+                        <label for="Descripcion">Precio-Unitario: (Descripcion)</label><br>
+                        <label for="Descripcion">Precio-Mayor: (Descripcion)</label><br>
+						<label for="Descripcion">Cantidad-Exitencia: (Descripcion)</label><br>
+						<label id="select7" for="Descripcion" style="visibility: hidden">Seleccionar<input type="checkbox" name="Seleccionar" id="" ></label >
+                </div>
+            </div>
+        </li>
+
+        
+
+
+
+
+      
+
+       
+
+    </ul>
+</div>
+
+
+    <section class="foot">
+        <div class="produc-link">
+          <div class="links">
+              <div class="link">
+                <h3>
+                  <a href="#">Quines somos</a>
+                </h3>
+                <ul>
+                  <li><a href="#">Conocenos/a></li>
+                  <li><a href="#">Contactanos</a></li>
+                  <br>
+                  <br>
+                </ul>
+              </div>
+
+              <div class="link">
+                <h3>
+                  <a href="html/erro404.html">Productos</a>
+                </h3>
+                <ul>
+                  <li><a href="#">Categorias</a></li>
+                  <li><a href="#">Meidamentos</a></li>
+                  <br>
+                  <br>
+                </ul>
+              </div>
+
+              <div class="link">
+                <h3>
+                  <a href="#">Trabaja con <br> Nosotros</a>
+                </h3>
+                <ul>
+                  <li><a href="#">Interesados</a></li>
+                  <li><a href="#">Informacion</a></li>
+           
+                </ul>
+              </div>
+
+              <div class="link">
+                <h3>
+                  <a href="#">Apoyo</a>
+                </h3>
+                <ul>
+                  <li><a href="#">Donde comprar</a></li>
+                  <li><a href="#">Garantia</a></li>
+                  <li><a href="#">Verificación de producto</a></li>
+                  <li><a href="#">Informacion</a></li>
+                </ul>
+              </div>
+          </div>
+      </div>
+
+    </section>
+    <footer class="pies">
+      <div  class="footer">
+        <p>
+          © Farmacias Sana-Sana, al alcance de tu bocillo. Todos los derechos reservados
+          <br>
+          La información que figura en esta página web, está dirigida exclusivamente al profesional destinado a prescribir o dispensar medicamentos por lo que requiere una formación especializada para su correcta interpretación. S.V.P. nº 712-L-CM concedida por la Comunidad de Madrid,autoridad competente en la materia, el 10 de junio de 1997.
+        </p>
+      </div>
+    </footer>
+</body>
+</html>

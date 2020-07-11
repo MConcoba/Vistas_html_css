@@ -1,0 +1,104 @@
+@font-face{
+    font-family: "Chery";
+    src: url("../fonts/Chewy.ttf");
+}
+
+
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+    background: url(../img/otro.png);
+}
+
+.contenedor {
+    text-align: center;
+    padding: 50px 0px 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(3, 27, 104);
+}
+
+.contenedor h2 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.contenedor h3 {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.contenedor h2 span {
+    background-color: #eee;
+    color: #03A9F4;
+    width: 250px;
+    height: 190px;
+    display: inline-grid;
+    align-items: center;
+    font-size: 100px;
+    border-radius: 50px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.contenedor p {
+    font-size: 17px;
+    line-height: 32px;
+    color: rgb(122, 122, 122);
+}
+
+.contenedor .btns {
+    padding: 20px 0px 20px;
+    margin-top: 10px;
+}
+
+.contenedor .btns a {
+    padding: 7px 15px;
+    background-color: #2196F3;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 10px 10px;
+    display: inline-block;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contenedor .btns a:hover{
+	opacity: 0.8;
+}
+
+.contenedor form input {
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.contenedor form .submit-btn {
+    height: 40px;
+    border: none;
+    margin-left: 10px;
+    color: #fff;
+    background-color: #03a9f4;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0px 15px;
+}
+
+.contenedor form .submit-btn:hover{
+	opacity: 0.8;
+}
+
+
+
+
+
+

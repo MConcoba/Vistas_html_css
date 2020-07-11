@@ -1,0 +1,385 @@
+@font-face {
+    font-family: "Chery";
+    src: url("../fonts/Chewy.ttf");
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Chery";
+}
+
+header{
+    display: flex;
+    width: 100%;
+}
+
+
+header figure{
+   display: flex;
+}
+
+
+.menu{
+    width: 100%; 
+    left: 0; 
+    top: 0;
+    position: absolute; 
+}
+
+.menu figure{
+    float: left;
+}
+
+header div{
+    float: right;
+}
+
+.menu .contenav{
+    float: right;
+    width: 100%;
+}
+
+
+.logoSana img{
+    padding: 0px;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%,-20%);
+    transition: 1.5s;
+}
+
+.contenav{
+   
+    height: 100px;
+    float: right;
+    text-align: right;
+}
+
+.contenav .navegacion{
+    height: 20px;
+    float: right;
+}
+
+.contenav nav{
+    height: 60px;
+    float: right;
+    text-align: right;
+}
+
+.navegacion{
+    display: flex;
+    height: 60px;
+    margin: 0px 0px 0px 30px;
+    padding: 20px 10px 20px 10px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    background: rgb(0, 18, 78);
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.navegacion ul{
+    display: flex;
+    list-style: none;
+    position: static;
+}
+
+.navegacion ul li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: rgb(0, 163, 63);
+    border-color: black;
+}
+
+.navegacion li a:hover{
+    color: rgb(0, 161, 153);
+}
+
+
+.navegacion > li{
+    float: right;
+}
+
+.navegacion li ul{
+ display: none;
+ position: absolute;
+ 
+}
+
+.contenav .navegacion li:hover > ul{
+    display: flex;
+    padding: 10px 5px 10px 5px;
+    background: rgb(0, 18, 78);
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+ 
+}
+
+.contenav .navegacion .user:hover > ul{
+  display: block;
+  padding: 10px 5px 10px 5px;
+  background: rgb(0, 18, 78);
+
+}
+
+.navegacion li ul li{
+ position: sticky;
+ 
+}
+
+
+.fondo{
+  width: 100%;
+}
+
+.fondo figure{
+  width: 100%;
+}
+
+.fondo figure img{
+  width: 100%;
+   
+}
+
+
+
+.redes{
+  width: 50px;
+  margin-top: 50px;
+  margin-left: 20px;
+  display: flex;
+  
+}
+
+  .logoFoot a{
+  list-style: none;
+  text-decoration: none;
+  color: rgb(0, 116, 90);
+}
+
+  .logoFoot a:hover{
+  color: rgb(0, 153, 20);
+
+  }
+
+    
+.informacion section{
+  float: right;
+  transform: translate(-5%, -200%);
+  
+}
+
+.informacion  h1{
+    font-size: 50px;
+    color: rgb(0, 139, 46);
+}
+
+.foot{
+  background-image: url("../img/h10-slider-img-1.png");
+  background-repeat: repeat;
+  width: 100%;
+  display: flex;
+  color: rgb(0, 71, 4);
+  position: absolute;
+}
+  
+.logoFoot{
+  width: 100%;
+}
+
+.logoFoot img{
+  padding-top: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+.produc-link{
+  padding-left: 100px;
+  display: flex;
+  
+}
+
+.links {
+  -webkit-column-count: 5; 
+  -moz-column-count: 5; 
+  column-count: 5;  
+  text-align: left;
+  padding: 30px;
+  
+}
+  
+.link{
+  list-style: none;
+  width: 170px;
+  font-size: 15px;
+}
+
+.link h3 a{
+  text-decoration: none;
+  color: rgb(119, 119, 119);
+  padding: 0;
+  margin: 0;
+}
+
+.link h3 a:hover{
+  color: rgb(25, 0, 255);
+}
+
+.link h3{
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;  
+}
+
+.link ul li a{
+  text-decoration: none;
+  color: gray;
+  list-style: none;
+  line-height: 25px;
+}
+
+.link ul li a:hover{
+  color: rgb(1, 88, 5);
+}
+
+.link ul li{
+  list-style: none;
+}
+
+.link ul{
+  padding-left: 5px;
+}
+
+.footer{
+  background-color: #c1fbff;
+  
+}
+
+.pie{
+  margin: 163px 0px 0px 0px;
+  padding: 0px;
+  font-size: 75%;
+  text-align: center !important;
+  align-content: center;
+  width: 100%;
+  line-height: 1.75;
+  color: darkgrey;
+  width:100%;
+}
+  
+
+.pie .footer{
+  text-align: center !important;
+  align-content: center;
+}
+
+.footer p br{
+  text-align: center !important;
+}
+
+  .logoFoot a{
+    display: inline-block;
+    color: #000;
+    background: white;
+    mix-blend-mode: multiply;
+    position: relative;
+}
+
+.logoFoot a:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgb(0, 70, 23), rgba(0, 167, 22, 0.808));
+    mix-blend-mode: screen; 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+/* Nosotros*/
+.bodyNosotros{
+    background: url(../img/pasillas.jpg) no-repeat;
+}
+
+.contenido{
+  position: relative;
+  
+  margin: 200px 50px 20px 50px;
+}
+
+.grid {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-auto-rows: auto;
+  padding-top: 10px;
+}
+
+.grid2{
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-auto-rows: auto;
+  padding-top: 10px;
+  border: black;
+  color: black;
+}
+
+.grid2 div{
+  display: inline-flex;
+}
+  
+
+  .contenido .grid figure img{
+      float: right;
+
+  }
+
+  .grupo{
+      width: 100%;
+  }
+
+  .grupo img{
+      float: left;
+      width: 100%;
+  }
+
+
+  /* Contactanos*/
+
+
+.comentarios{
+    margin: 150px 50px 20px 50px;
+}
+
+.contenedor-produc{
+    margin-top: 100px;
+}
+
+.produc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-rows: auto;
+    padding-top: 10px;
+}
+
+.produc-grid {
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  
+  }
+  
+.produc-grid section{
+    text-align: center;
+}
+
+

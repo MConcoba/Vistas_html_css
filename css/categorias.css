@@ -1,0 +1,60 @@
+
+
+.categorias{
+    height: 100px;
+   
+    
+}
+
+.categorias .nave{
+    height: 20px;
+  
+}
+
+.categorias nav{
+    height: 60px;
+  
+}
+
+.nave{
+    display: flex;
+    height: 60px;
+    margin: 0px 0px 0px 30px;
+    padding: 20px 10px 20px 10px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    background: no;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.nave ul{
+    display: flex;
+    list-style: none;
+   
+}
+
+.nave ul li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: rgb(0, 163, 63);
+    border-color: black;
+}
+
+.nave li a:hover{
+    color: rgb(0, 161, 153);
+}
+
+
+.nave > li{
+    float: right;
+    
+}
+
+.nave li ul{
+ display: none;
+}
+
+

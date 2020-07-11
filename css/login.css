@@ -1,0 +1,482 @@
+@font-face{
+    font-family: "Chery";
+    src: url("../fonts/Chewy.ttf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Chery";
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+
+
+
+header{
+  display: flex;
+  width: 100%;
+}
+
+
+header figure{
+ display: flex;
+}
+
+
+.menu{
+  width: 100%; 
+  left: 0; 
+  top: 0;
+  position: absolute; 
+}
+
+.menu figure{
+  float: left;
+}
+
+header div{
+  float: right;
+}
+
+.menu .contenav{
+  float: right;
+  width: 100%;
+}
+
+
+.logoSana img{
+  padding: 0px;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%,-20%);
+  transition: 1.5s;
+}
+
+.contenav{
+  height: 100px;
+  float: right;
+  text-align: right;
+}
+
+.contenav .navegacion{
+  height: 20px;
+  float: right;
+}
+
+.contenav nav{
+  height: 60px;
+  float: right;
+  text-align: right;
+}
+
+.contenav .navegacion{
+  display: flex;
+  height: 60px;
+  margin: 0px 0px 0px 30px;
+  padding: 20px 10px 20px 10px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  background: rgb(0, 18, 78);
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.navegacion ul{
+  display: flex;
+  list-style: none;
+  position: static;
+}
+
+.navegacion ul li a{
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: rgb(0, 163, 63);
+  border-color: black;
+}
+
+.navegacion li a:hover{
+  color: rgb(0, 161, 153);
+}
+
+
+.navegacion > li{
+  float: right;
+  
+}
+
+.navegacion li ul{
+display: none;
+position: absolute;
+
+
+}
+
+.contenav .navegacion li:hover > ul{
+  display: flex;
+  padding: 10px 5px 10px 5px;
+  background: rgb(0, 18, 78);
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+
+}
+
+.navegacion li ul li{
+position: sticky;
+
+}
+
+.login #todo img{
+    width: 100%;
+    position: absolute;
+}
+
+
+
+.formulario{
+    width: 450px;
+    border: 15px double #2196F3;
+    padding: 40px 30px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(35%,-50%);
+    margin: 20px 0px;
+}
+
+.contenedor {
+    float: left;
+    width: 100%;
+}
+
+.formularioRe{
+    width: 550px;
+    border: 15px double #2196F3;
+    padding: 10px 30px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-110%,-30%);
+    margin: 20px 0px;
+}
+
+
+
+.formulario h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    color: black;
+    font-size: 40px;
+}
+.formulario p {
+    font-size: 20px;
+    color: #333;
+}
+.formulario p a {
+    color: #d40000;
+}
+
+
+.info{
+    border-bottom: 2px solid #adadad;
+    position: relative;
+    margin: 30px 0;
+}
+
+.info input{
+    font-size: 15px;
+    color: #333;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 40px;
+}
+
+
+.btn-enviar {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: linear-gradient(70deg,rgb(26, 152, 255),#03bcd4,#2196F3);
+    background-size: 200%;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    margin: 15px 0px 0px;
+    border-radius: 50px;
+    transition: .5s;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.btn-enviar:hover{
+    background-position: right;
+}
+
+.bottom-links{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+ .icon{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+    align-content: center;   
+ }
+
+
+.icon img{
+    align-items: center;
+    align-content: center;
+    margin: 0px;
+    padding: 0px;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -18%);
+}
+
+
+.iconR{
+    margin: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px;
+    text-align: right;
+    float: right;
+ }
+
+
+.iconR img{
+    float: right;
+    margin: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px;
+    left: 50%;
+    top: 50%;
+    transform: translate(5%, -15%);
+    
+}
+section{
+    width: 100%;
+   
+    float: right;
+}
+
+section .informacion {
+    
+    transform: translate(0%, 10%);
+    width: 100%;
+    text-align: center;
+    margin-right: 100px;
+    margin-top: 200px;
+    margin-left: 300px;
+}
+
+.informacion{
+    width: 100%;
+    float: right;
+    position: absolute;
+}
+    
+
+
+.informacion  h1{
+    font-size: 50px;
+    color: rgb(0, 139, 46);
+}
+
+
+.home{
+    padding: 0px;
+    margin: 0px;
+    float: right;
+    position: absolute;
+}
+
+.home img{
+    width: 40px;
+}
+
+
+
+
+
+.info.radio{
+    text-align: center;
+    border-bottom: none
+}
+
+.info.radio .label{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #727171;
+}
+
+.formulario .info.radio input[type="radio"] {
+    display: none; 
+    text-align: center;
+}
+
+.formulario .info.radio input[type="radio"]:checked + label:before {
+    display: none; 
+}
+
+.formulario .info.radio input[type="radio"]:checked + label {
+    text-align: center;
+    padding: 5px 15px;
+    background: rgb(26, 152, 255);
+    border-radius: 2px;
+    color: #333;
+}
+
+.formulario .info label:before {
+    border-radius: 3px; 
+}
+
+
+.info.checkbox{
+    text-align: center;
+    color: #727171;
+    border-bottom: none;
+}
+
+
+
+.formulario .info input[type="checkbox"] {
+    display: none; 
+    text-align: center;
+    
+}
+    
+.formulario .info input[type="checkbox"]:checked + label:before {
+    display: none; 
+}
+
+.formulario .info input[type="checkbox"]:checked + label {
+    background: rgb(26, 152, 255);
+    color:#333;
+    padding: 5px 15px; 
+}
+
+.foot{
+  background-image: url("../img/h10-slider-img-1.png");
+  background-repeat: repeat;
+  width: 100%;
+  display: flex;
+  color: rgb(0, 71, 4);
+  position: relative;
+  margin-top: 700px;
+}
+  
+.logoFoot{
+  width: 100%;
+}
+
+.logoFoot img{
+  padding-top: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+.produc-link{
+  padding-left: 100px;
+  display: flex;
+  
+}
+
+.links {
+  -webkit-column-count: 5; 
+  -moz-column-count: 5; 
+  column-count: 5;  
+  text-align: left;
+  padding: 30px;
+  
+}
+  
+.link{
+  list-style: none;
+  width: 170px;
+  font-size: 15px;
+}
+
+.link h3 a{
+  text-decoration: none;
+  color: rgb(119, 119, 119);
+  padding: 0;
+  margin: 0;
+}
+
+.link h3 a:hover{
+  color: rgb(25, 0, 255);
+}
+
+.link h3{
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;  
+}
+
+.link ul li a{
+  text-decoration: none;
+  color: gray;
+  list-style: none;
+  line-height: 25px;
+}
+
+.link ul li a:hover{
+  color: rgb(1, 88, 5);
+}
+
+.link ul li{
+  list-style: none;
+}
+
+.link ul{
+  padding-left: 5px;
+}
+
+.footer{
+  background-color: #c1fbff;
+  
+}
+
+.pies{
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  font-size: 75%;
+  text-align: center !important;
+  align-content: center;
+  width: 100%;
+  line-height: 1.75;
+  color: darkgrey;
+  width:100%;
+}
+
+.fondo{
+  width: 100%;
+}
+
+.fondo figure{
+  width: 100%;
+}
+
+.fondo figure img{
+  width: 100%;
+   
+}
